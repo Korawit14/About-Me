@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Automatically Sliding Image Carousel</title>
+</head>
+<body>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            
+            <img src="./image/IMG_1659 - Copy.JPG" alt="Slide 1"> 
+        </div>
+        <div class="carousel-item">
+            <img src="./image/IMG_1671 - Copy.JPG" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="./image/IMG_1671.JPG" class="d-block w-100" alt="Slide 3">
+            <br><br>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // เพิ่ม JavaScript สำหรับการสไลด์รูปภาพโดยอัตโนมัติ
+    $(document).ready(function(){
+        $('#carouselExampleSlidesOnly').carousel({
+            interval: 2000 // กำหนดเวลาสไลด์ในหน่วยมิลลิวินาที
+        });
+    });
+</script>
+
+</body>
+</html>
